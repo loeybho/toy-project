@@ -1,38 +1,32 @@
 # TodoList 만들기
 
-배열 형태를 다루는 서비스 개발
+- 동적 데이터 관리 및 CRUD 구현
+- 배열 형태를 다루는 서비스 개발
 
-# 구현 기능
+## 핵심 기능
 
-1. new Date() 활용하여 오늘의 날짜 자동 출력
+1. 오늘의 날짜 자동 출력(new Date()활용)
 
-2. Todo 추가, 토글 완료, 삭제할 수 있는 상태 데이터 관리
+2. Todo 추가, 완료 토글, 삭제 기능 구현
 
-- TodoData가 객체로써는 어떻게 있어야 하는 지
+3. 상태 데이터 관리 및 Todo 객체 구조 설계
 
-3. useRef를 활용하여 todo 객체의 id값 지정하기
+4. useRef를 통한 Todo 객체 Id 지정
 
-# CRUD
+## CRUD
 
-1. Create: 투두 추가하기
-2. Read: 투두리스트 렌더링 하기
-3. Update: 투두 수정하기
-4. Delete: 투두 삭제하기
+1. Create: Todo 추가
+2. Read: Todo 렌더링
+3. Update: Todo 수정
+4. Delete: Todo 삭제
 
----
+## 향후 발전 방향
 
-## CRUD란 무엇인가?
+- 큰 프로젝트에 활용
+- Todo Drag & Drop 기능 추가
+- Todo 우선 순위 설정 기능 추가
+- 서버 연동을 통한 실시간 데이터 저장 및 동기화
 
-CRUD는 'Create, Read, Update, Delete'의 약어로 정보의 기본 처리 과정을 의미한다.
+## 결론
 
-1. Create : 생성
-   데이터 베이스에 새로운 데이터를 생성할 때 사용한다. 리소스에 접근할 때 사용할 수 있는 고유 Id가 할당된다.
-2. Read : 조회
-   데이터를 조회한다. 리소스를 검색하고 결과를 표시한다.
-3. Update : 수정
-   기존 데이터를 수정한다.
-4. Delete : 삭제
-   데이터를 삭제한다.
-
-- REST API에서의 CRUD
-  REST 환경에서 CRUD는 HTTP 메서드인 POST, GET, PUT, DELETE에 각각 해당한다. 클라이언트와 서버간의 HTTP 프로토콜을 이용해 REST API를 설계하고 작성할 때에도 CRUD 개념이 사용된다. 클라이언트는 적절한 HTTP 메서드와 URL을 사용해서 서버에 요청을 보내어 데이터를 생성, 조회, 수정, 삭제할 수 있다.
+TodoList 개발을 통해 배열 형태의 데이터를 처리하는 방법, 상태 관리, CRUD 개념과 React Hook 활용 능력을 향상시키고, 웹 개발의 실무 경험을 쌓을 수 있었다.
