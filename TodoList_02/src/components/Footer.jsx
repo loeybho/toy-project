@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <p>Front-End School 9기</p>
     </footer>
   );

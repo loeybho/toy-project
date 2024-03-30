@@ -10,7 +10,7 @@ function Header() {
             <li>
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "meue-selected" : "menu"
+                  isActive ? "menu-selected" : "menu"
                 }
                 to="home"
               >
@@ -20,9 +20,9 @@ function Header() {
             <li>
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "meue-selected" : "menu"
+                  isActive ? "menu-selected" : "menu"
                 }
-                to="home"
+                to="about"
               >
                 About
               </NavLink>
@@ -30,9 +30,9 @@ function Header() {
             <li>
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "meue-selected" : "menu"
+                  isActive ? "menu-selected" : "menu"
                 }
-                to="home"
+                to="list"
               >
                 TodoList
               </NavLink>
