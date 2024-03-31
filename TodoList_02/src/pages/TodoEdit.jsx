@@ -16,7 +16,6 @@ function TodoEdit() {
     const response = await axios.get(`/todolist/${_id}`);
     setItem(response.data.item);
   };
-
   useEffect(() => {
     fetchDetail();
   }, []);
@@ -42,7 +41,45 @@ function TodoEdit() {
     }
   };
 
-  return <></>;
+  return (
+    <>
+      <h2>할 일 수정</h2>
+      {item && (
+        <div className="todo">
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <label htmlFor="title">제목: </label>
+            <input
+              type="text"
+              id="title"
+              autoFocus
+              {...register("title", { required: "제목을 입력하세요" })}
+            />
+            <br />
+            <label htmlFor="content">내용: </label>
+            <textarea
+              id="content"
+              cols="25"
+              rows="8"
+              {...register("content", { required: "내용을 입력하세요" })}
+            />
+            <br />
+            <label htmlFor="done">완료: </label>
+            <input
+              type="checkbox"
+              id="done"
+              defaultChecked={item.done}
+              {...register("done")}
+            />
+            <br />
+            <button type="submit">수정</button>
+            <button type="reset" onClick={() => navigate(-1)}>
+              취소
+            </button>
+          </form>
+        </div>
+      )}
+    </>
+  );
 }
 
 export default TodoEdit;
