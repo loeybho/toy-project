@@ -1,4 +1,3 @@
-import Layout from "@components/Layout";
 import { lazy } from "react";
 import { Navigate, createBrowserRouter } from "react-router-dom";
 
@@ -9,6 +8,7 @@ const TodoDetail = lazy(() => import("@pages/TodoDetail"));
 const TodoEdit = lazy(() => import("@pages/TodoEdit"));
 const TodoList = lazy(() => import("@pages/TodoList"));
 const ErrorPage = lazy(() => import("@pages/ErrorPage"));
+const Layout = lazy(() => import("@components/Layout"));
 
 const router = createBrowserRouter([
   {
